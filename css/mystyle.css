@@ -37,7 +37,7 @@ hr.shorter {
 
 .homepic {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .content_pic{
@@ -300,7 +300,6 @@ hr.shorter {
 	{
 	  text-decoration: none;
 	  color: #232323;
-	  
 	  transition: color 0.3s ease;
 	}
 
