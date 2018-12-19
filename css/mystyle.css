@@ -98,6 +98,8 @@ hr.shorter {
   color:white;
 }
 
+
+
 .container {
   width: 100%;
   background-color: #ddd;
@@ -213,7 +215,7 @@ hr.shorter {
   display: table;
 }
 
-@media only screen and (min-width: 818px) {
+@media screen and (min-width: 818px)  {
 	#menuToggle 
 	{
 		display:none;
@@ -254,6 +256,11 @@ hr.shorter {
 	nav .topnav-right {
 	  float: right;
 	}
+	
+	.list1.contact_me_list{
+	  display:none;
+	}
+
 	[class*="col-"] {
 	  float: left;
 	  padding: 15px;
@@ -274,7 +281,7 @@ hr.shorter {
 }
 
 
-@media only screen and (max-width: 818px) {
+@media screen and (max-width: 818px) {
 	.homepic {
 	  width: 100%;
 	  height: auto;
@@ -315,7 +322,7 @@ hr.shorter {
 	  position: fixed;
 	  top: 0;
 	  width: 100%;
-	  z-index: 1;
+	  z-index: 2;
 	  padding:10px;
 	  -webkit-user-select: none;
 	  user-select: none;
@@ -434,7 +441,7 @@ hr.shorter {
 	.list1 ol li p { 
 	  padding:8px; 
 	  font-style:normal;
-	  font-size:25px; 
+	  font-size:30px; 
 	  color:#082567; 
 	  border-left: 5px solid #00477D; 
 	}
@@ -447,6 +454,10 @@ hr.shorter {
 	  padding-left: 58px;
 	  font-size:15px;
 	  text-align:center;
+	}
+	
+	.none_display{
+		display:none;
 	}
 	
 	[class*="col-"] {
