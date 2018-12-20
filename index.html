@@ -7,18 +7,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <nav>
-	<div class="topnav">
-	  <a class="name" href="#home">107423030 吳佳臻</a>
-	  <div class="topnav-right">
-		<a href="#about_me">ABOUT ME</a>
-		<a href="#work_experience">WORK EXPERIENCE</a>
-		<a href="#skills">SKILLS</a>
-		<a href="#hobby">HOBBY</a>
-		<a href="#contact_me">CONTACT ME</a>
-	  </div>
-	</div>
-  </nav>
   <nav role="navigation">
 	  <div id="menuToggle">
 		<input type="checkbox" />
@@ -28,7 +16,7 @@
 		<span></span>
 		
 		<ul id="menu">
-		  <a href="#home"><li>107423030 吳佳臻</li></a>
+		  <a href="#home" class="right"><li>107423030 吳佳臻</li></a>
 		  <a href="#about_me"><li>ABOUT ME</li></a>
 		  <a href="#work_experience"><li>WORK EXPERIENCE</li></a>
 		  <a href="#skills"><li>SKILLS</li></a>
@@ -38,9 +26,9 @@
 	  </div>
   </nav>
   <div>
-	<img class="homepic" src="pic/bg4.jpg">
+	<img class="homepic" src="pic/bg4.jpg" id="home">
   </div>
-  <div class="row content">
+  <div class="row content" id="about_me">
     <h1>ABOUT ME</h1>
 	<hr class="longer">
 	<hr class="shorter">
@@ -60,7 +48,7 @@
 		</div>
 	</div>
   </div>
-  <div class="row content_2">
+  <div class="row content_2" id="work_experience">
     <h1>WORK EXPERIENCE</h1>
 	<hr class="longer">
 	<hr class="shorter">
@@ -76,7 +64,7 @@
 	  <img class="content_pic" src="pic/work_2.jpg">
 	</div>
   </div>
-  <div class="row content">
+  <div class="row content" id="skills">
     <h1>SKILLS</h1>
 	<hr class="longer">
 	<hr class="shorter">
@@ -166,7 +154,7 @@
 		</div>
 	</div>
   </div>
-  <div class="content_2">
+  <div class="content_2" id="hobby">
     <h1>HOBBY</h1>
 	<hr class="longer">
 	<hr class="shorter">
@@ -207,7 +195,7 @@
 		</div>
 	</div>
   </div>
-  <div class="content">
+  <div class="content" id="contact_me">
     <h1>CONTACT ME</h1>
 	<hr class="longer">
 	<hr class="shorter">

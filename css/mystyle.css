@@ -37,7 +37,7 @@ hr.shorter {
 
 .homepic {
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
 
 .content_pic{
@@ -50,17 +50,18 @@ hr.shorter {
 .content{
 	width:100%;
 	height:auto;
+	min-height:70vh;
 	background-color:#F0F8FF;
-	margin:0 auto;
-	padding:30px;
+	padding:15vh 0;
 }
 
 .content_2{
 	width:100%;
 	height:auto;
+	min-height:70vh;
 	background-color:#fff;
-	margin:0 auto;
-	padding:30px;
+	margin-top:10vh;
+	padding:15vh 0;
 }
 
 .list1 ol { 
@@ -90,7 +91,7 @@ hr.shorter {
 	background-color: #F0D756;
 	font-size:30px;
 	text-align:center;
-	list-style: none
+	list-style: none;
 }
 
 .list2 li:hover {
@@ -216,45 +217,51 @@ hr.shorter {
 }
 
 @media screen and (min-width: 818px)  {
-	#menuToggle 
-	{
-		display:none;
-	}
 	
-	nav .topnav {
-	  overflow: hidden;
-	  background-color: #003153;
-	  position: fixed;
-	  z-index: 2; 
-	  top: 0;
-	  width: 100%;
+	#menuToggle span
+	{
+	  display: none;
+	  z-index:2;
 	}
 
-	nav .topnav a {
+	#menuToggle input
+	{
+	  display: none;
+	}
+
+	#menu
+	{
+		overflow: hidden;
+		background-color: #003153;
+		position:fixed;
+		padding:0;
+		margin:0;
+		width:100vw;
+		z-index:2;
+	}
+	
+	#menu > a{
 	  float: left;
 	  color: #f2f2f2;
 	  text-align: center;
 	  padding: 14px 16px;
 	  text-decoration: none;
-	  font-size: 17px;
+	  font-size: 20px;
 	}
-
-	nav .topnav a:hover {
+	
+	#menu > a > li {
+		list-style-type:none;
+		clear: both;
+	}
+	
+	#menu > a:hover {
 	  background-color: #FED55D;
 	  color: black;
 	}
-
-	nav .topnav a.name {
-	  color: white;
-	}
-
-	nav .topnav a.name:hover {
-	  background-color: #FED55D;
-	  color: black;
-	}
-
-	nav .topnav-right {
-	  float: right;
+	
+	#menu > a.right{
+		float:right;
+		margin-right:1vw;
 	}
 	
 	.list1.contact_me_list{
@@ -354,7 +361,7 @@ hr.shorter {
 	  position: relative;
 	  background: #ffffff;
 	  border-radius: 3px;
-	  z-index: 1;
+	  z-index: 2;
 	  transform-origin: 4px 0px;
 	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
 				  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -410,7 +417,7 @@ hr.shorter {
 	  margin: -100px 0 0 -50px;
 	  padding: 50px 50px 30px 50px;
 	  padding-top: 125px;
-	  
+
 	  background-color: #003153;
 	  list-style-type: none;
 	  -webkit-font-smoothing: antialiased;
